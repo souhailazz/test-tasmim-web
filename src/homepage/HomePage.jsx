@@ -12,7 +12,7 @@ const HomePage = () => {
         <p className="hero-description">
           Une agence web d'explorateurs ouverts sur le monde avec des<br></br> productions dans plusieurs secteurs d'activités, têtus lorsqu'il <br></br>s'agit d'accomplir une mission.
         </p>
-        <button className="learn-more-button">En savoir plus</button>
+        <button className="learn-more-button">En savoir plus</button><br></br><br></br><br></br>
         <div className="nav-container">
           <button className="nav-btn">Guides</button>
           <button className="nav-btn">Nos prestations</button>

@@ -1,12 +1,13 @@
 import React from 'react';
 import './Header2.css';
+import tasmimLogo from '../assets/images/tasmim.png';
+
 
 const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <span>Tasmim Web</span>
-        <p>Agence Digitale & Créative</p>
+        <span><img src={tasmimLogo} alt="Tasmim Logo" /></span>
       </div>
       <nav className="nav">
         <ul>

@@ -58,9 +58,12 @@ body, html {
   }
   
   .nav-container {
-    background: linear-gradient(to right, #0099ff, #0077ff);
-    padding: 10px;
+    background: linear-gradient(to right, #1c313e, #213a57);
+    padding: 7px;
     border-radius: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+
   }
   
   .nav-btn {
@@ -72,11 +75,13 @@ body, html {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
+    border-radius: 60px;
+
   }
   
   .nav-btn:hover, .nav-btn.active {
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
+    border-radius: 60px;
   }
   
   
