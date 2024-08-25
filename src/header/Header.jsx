@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <nav className="nav">
         <ul>
-          <li className="nav-item active"><a href="#">Accueil</a></li>
+          <li className="nav-item"><a href="#">Accueil</a></li>
           <li className="nav-item"><a href="www.agence.ma">L'agence</a></li>
           <li className="nav-item"><a href="#">Nos prestations</a></li>
           <li className="nav-item"><a href="#">Contactez-nous</a></li>

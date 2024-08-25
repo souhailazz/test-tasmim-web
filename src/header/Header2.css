@@ -60,6 +60,9 @@
 
 .nav-item a:hover {
   color: #007b83;
+  color: #007b83;
+  border-bottom: 2px solid #007b83;
+  padding-bottom: 5px;
 }
 
 .contact-info {
