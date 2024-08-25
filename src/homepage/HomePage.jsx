@@ -1,7 +1,6 @@
-// src/HomePage.jsx
 import React from 'react';
 import './HomePage.css';
-
+import ServicesGrid from '../servicegrid/ServiceGrid.jsx'; // Correct import path
 
 const HomePage = () => {
   return (
@@ -10,9 +9,11 @@ const HomePage = () => {
         <h1 className="hero-title">BIENVENUE</h1>
         <h2 className="hero-subtitle">TASMIM WEB</h2>
         <p className="hero-description">
-          Une agence web d'explorateurs ouverts sur le monde avec des<br></br> productions dans plusieurs secteurs d'activités, têtus lorsqu'il <br></br>s'agit d'accomplir une mission.
+          Une agence web d'explorateurs ouverts sur le monde avec des<br/> 
+          productions dans plusieurs secteurs d'activités, têtus lorsqu'il <br/>
+          s'agit d'accomplir une mission.
         </p>
-        <button className="learn-more-button">En savoir plus</button><br></br><br></br><br></br>
+        <button className="learn-more-button">En savoir plus</button><br/><br/><br/>
         <div className="nav-container">
           <button className="nav-btn">Guides</button>
           <button className="nav-btn">Nos prestations</button>
@@ -20,8 +21,12 @@ const HomePage = () => {
           <button className="nav-btn">Technologies</button>
         </div>
       </header>
-    </div>  
-
+      
+      {/* Add the ServicesGrid component here */}
+      <section className="services-section">
+        <ServicesGrid />
+      </section>
+    </div>
   );
 };
 
