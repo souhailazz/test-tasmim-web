@@ -25,7 +25,9 @@
 .service-item:hover {
   transform: scale(1.05);
 }
-
+.boxes:hover{
+  border: #832828;
+}
 .icon {
   font-size: 50px;
   margin-bottom: 10px;
