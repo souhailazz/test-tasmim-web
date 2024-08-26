@@ -17,8 +17,8 @@
   align-items: center;
   height: 150px;
   color: #ffffff;
-  background-size: cover;  /* Ensure the background image covers the entire box */
-  background-position: center;  /* Center the background image */
+  background-size: cover;  
+  background-position: center;  
   transition: transform 0.3s ease;
   fill: #010101; 
 }
@@ -34,23 +34,23 @@
 }
 @media (max-width: 768px) {
   .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* Show 2 items per row on smaller screens */
-    gap: 1px; /* Adjust gap as needed */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1px; 
   }
 
   .service-item {
-    min-height: 150px; /* Adjust height for better view on mobile */
-    background-size: cover; /* Ensure background image covers the box */
+    min-height: 150px; 
+    background-size: cover; 
   }
 }
 
 @media (max-width: 480px) {
   .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* Show 2 items per row on smaller screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   .service-item {
     width: auto;
-    min-height: 150px; /* Adjust height for better view on small mobile screens */
+    min-height: 150px; 
   }
 }
