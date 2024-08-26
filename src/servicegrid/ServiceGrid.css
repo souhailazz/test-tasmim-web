@@ -3,7 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   max-width: 900px;
-  margin: 40px auto;
+  margin: 40px auto; 
 }
 
 .service-item {
@@ -20,15 +20,37 @@
   background-size: cover;  /* Ensure the background image covers the entire box */
   background-position: center;  /* Center the background image */
   transition: transform 0.3s ease;
+  fill: #010101; 
 }
 
 .service-item:hover {
   transform: scale(1.05);
 }
-.boxes:hover{
-  border: #832828;
-}
+
 .icon {
   font-size: 50px;
   margin-bottom: 10px;
+  fill:#010101;
+}
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 items per row on smaller screens */
+    gap: 1px; /* Adjust gap as needed */
+  }
+
+  .service-item {
+    min-height: 150px; /* Adjust height for better view on mobile */
+    background-size: cover; /* Ensure background image covers the box */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 items per row on smaller screens */
+  }
+
+  .service-item {
+    width: auto;
+    min-height: 150px; /* Adjust height for better view on small mobile screens */
+  }
 }

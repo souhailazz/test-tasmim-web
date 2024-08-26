@@ -1,7 +1,6 @@
 import React from 'react';
 import './ServiceGrid.css';
 
-// Correct the import paths based on your file structure
 import designImage from '../assets/images/design.png';
 import analysisImage from '../assets/images/analysis.png';
 import seoImage from '../assets/images/seo.png';

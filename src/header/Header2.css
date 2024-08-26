@@ -85,22 +85,29 @@
       flex-direction: column;
       align-items: flex-start;
       padding: 10px;
+      width: 100%; /* Ensure it spans the entire width */
   }
 
   .logo {
       margin-bottom: 10px;
+      width: 100%; /* Ensure logo container spans full width */
+      text-align: center; /* Center the logo */
+  }
+
+  .logo img {
+      max-width: 150px; /* Constrain logo size */
   }
 
   .nav ul {
       flex-direction: column;
-  }
-
-  .nav-item {
-      margin-right: 0;
-      margin-bottom: 10px;
+      width: 100%; /* Ensure the nav spans the full width */
+      text-align: center; /* Center nav items */
   }
 
   .contact-info {
       margin-top: 10px;
+      width: 100%; /* Ensure contact info spans full width */
+      text-align: center; /* Center the text */
   }
 }
+
