@@ -6,7 +6,7 @@ const Features = () => {
     <div className="features-container">
       <div className="feature-item">
         <div className="icon">
-          {/* Add your image icon here */}
+          <img src="/src/assets/images/fe1.png" alt="Feature 1" />
         </div>
         <div className="content">
           <p>
