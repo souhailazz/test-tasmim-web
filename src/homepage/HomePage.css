@@ -138,3 +138,57 @@ body, html {
   margin-left: auto;
   margin-right: auto;
 }
+/* Mobile View */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 40px 10px; /* Reduced padding for smaller screens */
+  }
+
+  .hero-title {
+    font-size: 36px; /* Adjust font size for better readability */
+  }
+
+  .hero-subtitle {
+    font-size: 28px; /* Adjust font size for better readability */
+  }
+
+  .hero-description {
+    font-size: 16px; /* Adjust font size for better readability */
+    margin: 20px auto;
+    max-width: 90%; /* Reduce max width to fit smaller screens */
+  }
+
+  .learn-more-button {
+    font-size: 16px; /* Adjust button font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+
+  .nav-container {
+    padding: 5px; /* Reduce padding */
+    border-radius: 20px; /* Reduce border radius */
+  }
+
+  .nav-btn {
+    padding: 8px 15px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+    margin: 0 3px; /* Reduce margin */
+  }
+
+  .services-section {
+    grid-template-columns: 1fr; /* Stack services in a single column */
+    gap: 10px; /* Reduce gap between items */
+    margin: 20px auto; /* Adjust margin */
+  }
+
+  .imagesponsor {
+    width: 100%; /* Ensure image fits the screen width */
+    max-width: 100%; /* Remove max width restriction */
+    margin-top: 20px; /* Add margin top to separate from text */
+  }
+
+  .home-page h3 {
+    font-size: 20px; /* Adjust font size */
+    margin: 20px auto; /* Adjust margin */
+  }
+}
+
