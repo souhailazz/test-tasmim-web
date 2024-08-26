@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomePage.css';
-import ServicesGrid from '../servicegrid/ServiceGrid.jsx'; // Correct import path
+import ServicesGrid from '../servicegrid/ServiceGrid.jsx'; 
+
 
 const HomePage = () => {
   return (
