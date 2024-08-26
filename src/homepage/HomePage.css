@@ -5,7 +5,6 @@ body, html {
   font-family: Arial, sans-serif;
   color: #ffffff;
   overflow-x: hidden;
-
 }
 
 /* Home Page Styles */
@@ -130,10 +129,11 @@ body, html {
   height: 50px;
   margin-bottom: 1rem;
 }
+
 .imagesponsor {
-  width: 80%; /* Adjust this value to control the size */
-  max-width: 80%; /* Set a maximum width */
-  margin-top: -100px; /* Move the image upward */
+  width: 80%; 
+  max-width: 80%; 
+  margin-top: -100px; 
   display: block;
   margin-left: auto;
   margin-right: auto;
