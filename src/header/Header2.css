@@ -5,22 +5,23 @@
   justify-content: space-between;
   align-items: center;
   background-color: #d3eef0;
-  padding: 0px 10px;
+  padding: 10px 10px;
   border-bottom: 2px solid #007b83;
-  top: 0; /* Ensure proper positioning */
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  width: 100%; /* Ensure full width */
 }
 
 .logo {
   display: flex;
-  align-items: center; /* Center align logo items */
+  align-items: center;
 }
 
 .logo img {
-  max-width: 200px; /* Increase the max-width to make the logo bigger */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 200px;
+  height: auto;
 }
 
 .logo span {
@@ -52,14 +53,8 @@
   font-weight: 500;
 }
 
-.nav-item.active a {
-  color: #007b83;
-  border-bottom: 2px solid #007b83;
-  padding-bottom: 5px;
-}
-
+.nav-item.active a,
 .nav-item a:hover {
-  color: #007b83;
   color: #007b83;
   border-bottom: 2px solid #007b83;
   padding-bottom: 5px;
@@ -83,31 +78,34 @@
 @media (max-width: 768px) {
   .header {
       flex-direction: column;
-      align-items: flex-start;
-      padding: 10px;
-      width: 100%; /* Ensure it spans the entire width */
+      align-items: center;
+      padding: 15px 10px;
+      width: 100%;
   }
 
   .logo {
       margin-bottom: 10px;
-      width: 100%; /* Ensure logo container spans full width */
-      text-align: center; /* Center the logo */
+      width: auto; /* Logo container adjusts to content */
+      text-align: center;
   }
 
   .logo img {
-      max-width: 150px; /* Constrain logo size */
+      max-width: 150px;
   }
 
   .nav ul {
-      flex-direction: column;
-      width: 100%; /* Ensure the nav spans the full width */
-      text-align: center; /* Center nav items */
+      flex-direction: row; /* Keep nav items in a row */
+      justify-content: center;
+      width: 100%;
+  }
+
+  .nav-item {
+      margin: 0 10px; /* Adjust margins for spacing */
   }
 
   .contact-info {
       margin-top: 10px;
-      width: 100%; /* Ensure contact info spans full width */
-      text-align: center; /* Center the text */
+      width: auto;
+      text-align: center;
   }
 }
-
