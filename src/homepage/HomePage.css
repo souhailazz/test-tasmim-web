@@ -49,11 +49,14 @@ body, html {
   margin-top: 20px;
   cursor: pointer;
   border-radius: 30px;
+  transition: all 0.3s ease; /* Add transition for smooth animation */
 }
 
 .learn-more-button:hover {
   background-color: #007bbf;
   border-radius: 15px;
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 /* Navigation Container and Buttons */
@@ -73,12 +76,13 @@ body, html {
   margin: 0 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease; /* Change to all for multiple property transitions */
   border-radius: 60px;
 }
 
 .nav-btn:hover, .nav-btn.active {
   background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px); /* Slight upward movement on hover */
 }
 
 /* Services Section */
@@ -101,11 +105,13 @@ body, html {
   justify-content: center;
   align-items: center;
   height: 150px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease; /* Change to all for multiple property transitions */
 }
 
 .service-box:hover {
   background-color: rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px); /* Upward movement on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
 }
 
 /* Other Styles */
