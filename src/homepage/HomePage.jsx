@@ -47,8 +47,12 @@ const HomePage = () => {
         <ServicesGrid />
       </section>
       
-      <h3>Prêt à digitaliser votre entreprise ?</h3>
-      
+
+      <div className="cta-container">
+        <h3 className="cta-heading">Prêt à digitaliser votre entreprise ?</h3>
+        <button className="learn-more-button">En savoir plus</button>
+      </div>
+
       <img className="imagesponsor" src="src/assets/images/sponsor.png" alt="Sponsor Image" />
 
       <Features />

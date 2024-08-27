@@ -17,7 +17,6 @@
     color: white;
     position: relative; /* Position relative to allow absolute positioning of the .icon */
     overflow: hidden; /* Ensures the icon doesn’t overflow the container */
-    transition: background-color 0.3s ease; /* Optional: smooth background color transition */
 }
 
 .icon {
@@ -26,7 +25,6 @@
     left: 20px; /* Initial position */
     width: 150px; /* Fixed width for the icon */
     height: 150px; /* Fixed height for the icon */
-    transition: transform 0.3s ease-out; /* Smooth transition for moving the icon */
 }
 
 .icon img {
@@ -40,10 +38,4 @@
     flex: 1; /* Make the content take up the remaining space */
 }
 
-.feature-item:hover .icon {
-    transform: translateX(calc(100% - 150px - 20px)); /* Moves the icon to the right side */
-}
-
-.feature-item:hover .content {
-    margin-left: 20px; /* Adjust content margin on hover to make space for the icon */
-}
+/* Remove duplicate styles and unused properties */
