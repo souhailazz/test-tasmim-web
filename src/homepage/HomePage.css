@@ -54,6 +54,23 @@ body, html {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #CAECF1;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+  opacity: 0.8;
+}
 
 .nav-container {
   background: linear-gradient(to right, #1c313e, #213a57);
@@ -115,6 +132,9 @@ body, html {
   background-color: rgba(0, 0, 0, 0.4);
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.no-underline {
+  text-decoration: none;
 }
 
 .nav-buttons {
@@ -194,6 +214,11 @@ body, html {
     gap: 10px;
     margin: 20px auto;
   }
+  .service-box:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
 
   .imagesponsor {
     width: 100%;
@@ -205,6 +230,13 @@ body, html {
     font-size: 20px;
     margin: 20px auto;
   }
+
+}
+.no-underline {
+  text-decoration: none;
+}
+.nav-buttons:hover {
+  background-color: #007bbf;
 }
 
 .cta-heading {
