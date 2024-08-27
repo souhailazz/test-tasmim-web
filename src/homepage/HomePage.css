@@ -1,4 +1,3 @@
-/* Global Styles */
 body, html {
   margin: 0;
   padding: 0;
@@ -7,7 +6,6 @@ body, html {
   overflow-x: hidden;
 }
 
-/* Home Page Styles */
 .home-page {
   text-align: center;
   background: linear-gradient(135deg, #004080 0%, #2596be 80%);
@@ -15,7 +13,6 @@ body, html {
   padding: 80px 20px;
 }
 
-/* Hero Section */
 .hero-section {
   margin-bottom: 40px;
 }
@@ -39,7 +36,6 @@ body, html {
   max-width: 600px;
 }
 
-/* Learn More Button */
 .learn-more-button {
   background-color: #00a8e8;
   border: none;
@@ -49,17 +45,16 @@ body, html {
   margin-top: 20px;
   cursor: pointer;
   border-radius: 30px;
-  transition: all 0.3s ease; /* Add transition for smooth animation */
+  transition: all 0.3s ease;
 }
 
 .learn-more-button:hover {
   background-color: #007bbf;
   border-radius: 15px;
-  transform: scale(1.05); /* Slightly increase size on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Navigation Container and Buttons */
 .nav-container {
   background: linear-gradient(to right, #1c313e, #213a57);
   padding: 7px;
@@ -76,16 +71,25 @@ body, html {
   margin: 0 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: all 0.3s ease; /* Change to all for multiple property transitions */
+  transition: all 0.3s ease;
   border-radius: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+.nav-btn svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
 
 .nav-btn:hover, .nav-btn.active {
   background-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px); /* Slight upward movement on hover */
+  transform: translateY(-2px);
 }
 
-/* Services Section */
 .services-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -94,7 +98,6 @@ body, html {
   margin: 40px auto;
 }
 
-/* Service Box */
 .service-box {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -105,16 +108,15 @@ body, html {
   justify-content: center;
   align-items: center;
   height: 150px;
-  transition: all 0.3s ease; /* Change to all for multiple property transitions */
+  transition: all 0.3s ease;
 }
 
 .service-box:hover {
   background-color: rgba(0, 0, 0, 0.4);
-  transform: translateY(-5px); /* Upward movement on hover */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Other Styles */
 .nav-buttons {
   background-color: #00a8e8;
   border: none;
@@ -144,59 +146,67 @@ body, html {
   margin-left: auto;
   margin-right: auto;
 }
-/* Mobile View */
+
 @media (max-width: 768px) {
   .home-page {
-    padding: 40px 10px; /* Reduced padding for smaller screens */
+    padding: 40px 10px;
   }
 
   .hero-title {
-    font-size: 36px; /* Adjust font size for better readability */
+    font-size: 36px;
   }
 
   .hero-subtitle {
-    font-size: 28px; /* Adjust font size for better readability */
+    font-size: 28px;
   }
 
   .hero-description {
-    font-size: 16px; /* Adjust font size for better readability */
+    font-size: 16px;
     margin: 20px auto;
-    max-width: 90%; /* Reduce max width to fit smaller screens */
+    max-width: 90%;
   }
 
   .learn-more-button {
-    font-size: 16px; /* Adjust button font size */
-    padding: 8px 16px; /* Adjust padding */
+    font-size: 16px;
+    padding: 8px 16px;
   }
 
   .nav-container {
-    padding: 5px; /* Reduce padding */
-    border-radius: 20px; /* Reduce border radius */
+    padding: 5px;
+    border-radius: 20px;
   }
 
   .nav-btn {
-    padding: 8px 15px; /* Adjust padding */
-    font-size: 14px; /* Adjust font size */
-    margin: 0 3px; /* Reduce margin */
+    padding: 6px 12px;
+    font-size: 12px;
+    margin: 0 2px;
+    height: 32px;
+  }
+
+  .nav-btn svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
   }
 
   .services-section {
-    grid-template-columns: 1fr; /* Stack services in a single column */
-    gap: 10px; /* Reduce gap between items */
-    margin: 20px auto; /* Adjust margin */
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 20px auto;
   }
 
   .imagesponsor {
-    width: 100%; /* Ensure image fits the screen width */
-    max-width: 100%; /* Remove max width restriction */
-    margin-top: 20px; /* Add margin top to separate from text */
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
   }
 
   .home-page h3 {
-    font-size: 20px; /* Adjust font size */
-    margin: 20px auto; /* Adjust margin */
+    font-size: 20px;
+    margin: 20px auto;
   }
 }
+
 .cta-heading {
   font-size: 2rem;
   color: #333;
