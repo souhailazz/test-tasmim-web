@@ -13,6 +13,26 @@ const featureData = [
   {
     icon: "/src/assets/images/fe3.png", 
     content: "Augmentez vos performances commerciales, votre volume de ventes, et diversifiez ainsi votre clientèle grâce à votre boutique en ligne. Créer votre propre site e-commerce dynamique vous ouvre les portes du e-business national et international. Proposez à vos clients un catalogue de vos produits pour passer leurs commandes et effectuer leurs achats en ligne de manière sécurisée."
+  },
+  {
+    icon: "/src/assets/images/fe4.png", 
+    content: "Augmentez vos performances commerciales, votre volume de ventes, et diversifiez ainsi votre clientèle grâce à votre boutique en ligne. Créer votre propre site e-commerce dynamique vous ouvre les portes du e-business national et international. Proposez à vos clients un catalogue de vos produits pour passer leurs commandes et effectuer leurs achats en ligne de manière sécurisée."
+  },
+  {
+    icon: "/src/assets/images/fe5.png", 
+    content: "Augmentez vos performances commerciales, votre volume de ventes, et diversifiez ainsi votre clientèle grâce à votre boutique en ligne. Créer votre propre site e-commerce dynamique vous ouvre les portes du e-business national et international. Proposez à vos clients un catalogue de vos produits pour passer leurs commandes et effectuer leurs achats en ligne de manière sécurisée."
+  },
+  {
+    icon: "/src/assets/images/fe6.png", 
+    content: "Augmentez vos performances commerciales, votre volume de ventes, et diversifiez ainsi votre clientèle grâce à votre boutique en ligne. Créer votre propre site e-commerce dynamique vous ouvre les portes du e-business national et international. Proposez à vos clients un catalogue de vos produits pour passer leurs commandes et effectuer leurs achats en ligne de manière sécurisée."
+  },
+  {
+    icon: "/src/assets/images/fe7.png", 
+    content: "Augmentez vos performances commerciales, votre volume de ventes, et diversifiez ainsi votre clientèle grâce à votre boutique en ligne. Créer votre propre site e-commerce dynamique vous ouvre les portes du e-business national et international. Proposez à vos clients un catalogue de vos produits pour passer leurs commandes et effectuer leurs achats en ligne de manière sécurisée."
+  },
+  {
+    icon: "/src/assets/images/fe8.png", 
+    content: "Augmentez vos performances commerciales, votre volume de ventes, et diversifiez ainsi votre clientèle grâce à votre boutique en ligne. Créer votre propre site e-commerce dynamique vous ouvre les portes du e-business national et international. Proposez à vos clients un catalogue de vos produits pour passer leurs commandes et effectuer leurs achats en ligne de manière sécurisée."
   }
 ];
 
