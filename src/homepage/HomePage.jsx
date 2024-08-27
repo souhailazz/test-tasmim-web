@@ -81,7 +81,7 @@ const HomePage = () => {
 
       {showButton && (
         <button className="back-to-top" onClick={scrollToTop}>
-          <img src="src/assets/images/arrow-up.svg" alt="Retour en haut" />
+          Retour en haut
         </button>
       )}
     </div>
