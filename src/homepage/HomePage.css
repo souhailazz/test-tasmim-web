@@ -78,6 +78,8 @@ body, html {
   border-radius: 30px;
   margin: 0 auto;
   max-width: 800px;
+  position: relative;
+  z-index: 2;
 }
 
 .nav-btn {
@@ -161,10 +163,12 @@ body, html {
 .imagesponsor {
   width: 80%; 
   max-width: 80%; 
-  margin-top: -100px; 
   display: block;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px; 
 }
 
 @media (max-width: 768px) {
