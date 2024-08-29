@@ -5,8 +5,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: #d3eef0;
-  padding: 10px 10px;
-  border-bottom: 2px solid #007b83;
+  padding: 3px 3px; /* Reduced padding */
+  border-bottom: 2px solid #007b83; /* Reduced border size */
   top: 0;
   left: 0;
   right: 0;
