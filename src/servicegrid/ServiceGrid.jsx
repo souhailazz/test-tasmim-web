@@ -1,12 +1,12 @@
 import React from 'react';
 import './ServiceGrid.css';
 
-import designImage from '/public/design.png';
-import analysisImage from '/public/analysis.png';
-import seoImage from '/public/seo.png';
-import uiux from '/public/uiux.png'; 
-import fullstack from '/public/fullstack.png';
-import webdev from '/public/webdev.png';
+import designImage from '/design.png';
+import analysisImage from '/analysis.png';
+import seoImage from '/seo.png';
+import uiux from '/uiux.png'; 
+import fullstack from '/fullstack.png';
+import webdev from '/webdev.png';
 
 function ServicesGrid() {
   const services = [

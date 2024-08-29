@@ -1,7 +1,6 @@
 import React from 'react';
 import './Header2.css';
-import tasmimLogo from '/public/tasmim.png';
-
+import tasmimLogo from '/tasmim.png';
 
 const Header = () => {
   return (
