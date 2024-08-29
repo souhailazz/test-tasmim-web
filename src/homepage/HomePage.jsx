@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './HomePage.css';
 import ServicesGrid from '../servicegrid/ServiceGrid.jsx'; 
 import Features from '../feature/Feature2.jsx';
-import Footer from '../footer/footer.jsx';
 
 const HomePage = () => {
   const [showButton, setShowButton] = useState(false);
@@ -102,7 +101,6 @@ const HomePage = () => {
         </button>
       )}
       
-      <Footer />
     </div>
   );
 };
