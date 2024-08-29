@@ -35,7 +35,7 @@ const HomePage = () => {
       case 'processus':
         return <Features />;
       case 'technologies':
-        return <img className="imagesponsor" src="src/assets/images/sponsor.png" alt="Sponsor Image" style={{ position: 'relative', zIndex: 1 }} />;
+        return <img className="imagesponsor" src="/public/sponsor.png" alt="Sponsor Image" style={{ position: 'relative', zIndex: 1 }} />;
       default:
         return (
           <>
@@ -43,7 +43,7 @@ const HomePage = () => {
               <ServicesGrid />
             </section>
             <h3 className="cta-heading">Prêt à digitaliser votre entreprise ?</h3>
-            <img className="imagesponsor" src="src/assets/images/sponsor.png" alt="Sponsor Image" />
+            <img className="imagesponsor" src="/public/sponsor.png" alt="Sponsor Image" />
             <Features />
           </>
         );
