@@ -38,4 +38,25 @@
     flex: 1; /* Make the content take up the remaining space */
 }
 
+/* Responsive adjustments for mobile view */
+@media (max-width: 600px) {
+    .feature-item {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .icon {
+        position: static; /* Remove absolute positioning */
+        width: 100px; /* Adjust width for mobile */
+        height: 100px; /* Adjust height for mobile */
+        margin-bottom: 10px; /* Add margin for spacing */
+    }
+
+    .content {
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center text for better readability */
+    }
+}
+
 /* Remove duplicate styles and unused properties */
