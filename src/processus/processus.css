@@ -32,24 +32,24 @@
 
 .process-step {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start; /* Align items to the start */
     margin-bottom: 40px; /* Increased margin */
 }
 
 .step-number {
-    width: 40px; /* Increased size */
-    height: 40px; /* Increased size */
+    width: 40px; /* Size of the step number */
+    height: 40px; /* Size of the step number */
     border-radius: 50%;
     background-color: #fff;
-    border: 2px solid #3498db; /* Changed border color */
+    border: 2px solid #3498db; /* Border color */
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    margin-right: 30px; /* Increased margin */
+    margin-right: 20px; /* Space between number and content */
     position: relative;
     z-index: 1;
-    transition: background-color 0.3s, transform 0.3s; /* Added transition */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
 }
 
 .step-number:hover {
@@ -59,12 +59,14 @@
 }
 
 .step-content {
-    flex: 1;
-    padding: 20px; /* Increased padding */
-    border-radius: 8px; /* More rounded corners */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Stronger shadow */
+    flex: 1; /* Take remaining space */
+    padding: 20px; /* Padding for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Shadow effect */
     color: white;
-    transition: background-color 0.3s; /* Added transition for hover */
+    transition: background-color 0.3s; /* Transition for hover */
+    display: flex; /* Flexbox for inner content */
+    flex-direction: column; /* Stack title and description */
 }
 
 .step-content:hover {
@@ -74,3 +76,13 @@
 .blue .step-content { background-color: #2980b9; } /* Darker blue */
 .orange .step-content { background-color: #d35400; } /* Darker orange */
 .green .step-content { background-color: #27ae60; } /* Darker green */
+
+.step-title {
+    margin: 0; /* Remove default margin */
+    font-size: 20px; /* Title font size */
+}
+
+.step-description {
+    margin-top: 5px; /* Space between title and description */
+    font-size: 16px; /* Description font size */
+}
