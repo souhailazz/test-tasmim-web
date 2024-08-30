@@ -17,21 +17,30 @@
   align-items: center;
   height: 150px;
   color: #ffffff;
-  background-size: cover;  
+  background-size: 100%;
   background-position: center;  
-  transition: transform 0.3s ease;
-  fill: #010101; 
+  transition: all 0.3s ease, background-size 0.3s ease;
+  transform: scale(5);
+  overflow: hidden;
+
 }
 
 .service-item:hover {
   transform: scale(1.05);
+  background-size: 110%;
+  background-color: #313c43;
+color: rgb(16, 18, 32);
+
 }
+
 
 .icon {
   font-size: 50px;
   margin-bottom: 10px;
-  fill:#010101;
+  fill: #010101;
+  transition: transform 0.3s ease;
 }
+
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr); 

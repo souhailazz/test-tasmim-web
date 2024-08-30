@@ -93,7 +93,7 @@ body, html {
   margin: 0 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease; /* Consolidated transition */
   border-radius: 60px;
   display: inline-flex;
   align-items: center;
@@ -109,7 +109,7 @@ body, html {
 
 .nav-btn:hover, .nav-btn.active {
   background-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.1); /* Combined transform properties */
 }
 
 .services-section {
