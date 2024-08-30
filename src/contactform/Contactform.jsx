@@ -6,27 +6,22 @@ const ContactForm = ({ onClose }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [errors, setErrors] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const validateForm = () => {
-    const newErrors = {};
-    if (!name.trim()) newErrors.name = "Le nom est requis";
-    if (!email.trim()) newErrors.email = "L'email est requis";
-    else if (!/\S+@\S+\.\S+/.test(email)) newErrors.email = "L'email est invalide";
-    if (!message.trim()) newErrors.message = "Le message est requis";
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      console.log('Form submitted:', { name, email, message });
-      setIsSubmitted(true);
-      setTimeout(() => {
-        onClose();
-      }, 3000);
+    try {
+      const response = await fetch('http://localhost:5000/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+      const data = await response.json();
+      console.log('Form submitted:', data);
+      onClose();
+    } catch (error) {
+      console.error('Error submitting form:', error);
     }
   };
 
@@ -44,7 +39,6 @@ const ContactForm = ({ onClose }) => {
               onChange={(e) => setName(e.target.value)}
               required
             />
-            {errors.name && <div className="error-message">{errors.name}</div>}
           </div>
           <div className="input-group">
             <FaEnvelope className="input-icon" />
@@ -55,7 +49,6 @@ const ContactForm = ({ onClose }) => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            {errors.email && <div className="error-message">{errors.email}</div>}
           </div>
           <div className="input-group">
             <FaComment className="input-icon" />
@@ -65,11 +58,9 @@ const ContactForm = ({ onClose }) => {
               onChange={(e) => setMessage(e.target.value)}
               required
             ></textarea>
-            {errors.message && <div className="error-message">{errors.message}</div>}
           </div>
           <button type="submit"><FaPaperPlane /> Envoyer</button>
         </form>
-        {isSubmitted && <div className="success-message">Message envoyé avec succès !</div>}
         <button className="close-button" onClick={onClose}><FaTimes /></button>
       </div>
     </div>

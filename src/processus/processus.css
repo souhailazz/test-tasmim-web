@@ -1,0 +1,76 @@
+.process-diagram {
+    font-family: 'Helvetica Neue', sans-serif; /* Changed font */
+    max-width: 900px; /* Increased max-width */
+    margin: 0 auto;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners for the diagram */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+}
+
+.process-title {
+    color: #34495e; /* Darker title color */
+    font-size: 28px; /* Increased font size */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px; /* Increased margin */
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px; /* Increased padding for better spacing */
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 25px; /* Adjusted for better alignment */
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Thicker line */
+    background-color: #3498db; /* Changed line color */
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px; /* Increased margin */
+}
+
+.step-number {
+    width: 40px; /* Increased size */
+    height: 40px; /* Increased size */
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #3498db; /* Changed border color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 30px; /* Increased margin */
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s, transform 0.3s; /* Added transition */
+}
+
+.step-number:hover {
+    background-color: #3498db; /* Change on hover */
+    color: white; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.step-content {
+    flex: 1;
+    padding: 20px; /* Increased padding */
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Stronger shadow */
+    color: white;
+    transition: background-color 0.3s; /* Added transition for hover */
+}
+
+.step-content:hover {
+    opacity: 0.9; /* Slightly transparent on hover */
+}
+
+.blue .step-content { background-color: #2980b9; } /* Darker blue */
+.orange .step-content { background-color: #d35400; } /* Darker orange */
+.green .step-content { background-color: #27ae60; } /* Darker green */
