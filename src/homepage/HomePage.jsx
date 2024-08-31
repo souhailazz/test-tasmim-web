@@ -3,7 +3,7 @@ import './HomePage.css';
 import ServicesGrid from '../servicegrid/ServiceGrid.jsx'; 
 import Features from '../feature/Feature2.jsx';
 import ProcessDiagram from '../processus/processus.jsx';
-
+import SponsorCarousel from '../sponsor/sponsor.jsx';
 
 
 
@@ -35,9 +35,9 @@ const HomePage = () => {
       case 'guides':
         return <ServicesGrid />;
       case 'prestations':
-        return <ServicesGrid />;
-      case 'processus':
         return <Features />;
+      case 'processus':
+        return <ProcessDiagram />;
       case 'technologies':
         return <img className="imagesponsor" src="/sponsor.png" alt="Sponsor Image" style={{ position: 'relative', zIndex: 1 }} />;
       default:
@@ -47,7 +47,6 @@ const HomePage = () => {
               <ServicesGrid />
             </section>
             <h3 className="cta-heading" style={{"--animation-order": 2}}>Prêt à digitaliser votre entreprise ?</h3>
-            <img className="imagesponsor" src="/sponsor.png" alt="Sponsor Image" style={{"--animation-order": 3}} />
             <Features />
           </>
         );
@@ -103,8 +102,8 @@ const HomePage = () => {
         <button className="back-to-top" onClick={scrollToTop}>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
         </button>
-      )}
-      <ProcessDiagram />
+      )}<ProcessDiagram/> 
+      <SponsorCarousel/>
     </div>
   );
 };

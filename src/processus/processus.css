@@ -8,11 +8,19 @@
 }
 
 .process-title {
-    color: #34495e; /* Darker title color */
+    color: #ffffff; /* Darker title color */
     font-size: 28px; /* Increased font size */
     font-weight: bold;
     text-align: center;
     margin-bottom: 50px; /* Increased margin */
+}
+.process-title:hover { /* Fixed selector by removing the space */
+    font-size: 30px; /* Increased font size */
+    transition: font-size 0.3s ease, color 0.4s ease; /* Combined transitions */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px; 
+    color: #14343a; /* Set color on hover */
 }
 
 .timeline {
@@ -40,11 +48,11 @@
     width: 40px; /* Size of the step number */
     height: 40px; /* Size of the step number */
     border-radius: 50%;
-    background-color: #fff;
-    border: 2px solid #3498db; /* Border color */
+    background-color: #254a71;
+    border: 5px solid #3498db; /* Border color */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     font-weight: bold;
     margin-right: 20px; /* Space between number and content */
     position: relative;
@@ -54,8 +62,8 @@
 
 .step-number:hover {
     background-color: #3498db; /* Change on hover */
-    color: white; /* Change text color on hover */
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    color: rgb(0, 0, 0); /* Change text color on hover */
+    transform: scale(1.8); /* Slightly enlarge on hover */
 }
 
 .step-content {
@@ -85,4 +93,19 @@
 .step-description {
     margin-top: 5px; /* Space between title and description */
     font-size: 16px; /* Description font size */
+}
+
+.step-icon {
+    display: flex; /* Ensure the icon is centered */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    height: 100px; /* Set a height for the icon container */
+    width: 100px; /* Set a width for the icon container */
+    margin: 0 auto; /* Center the icon container */
+}
+
+.icon {
+    max-width: 50%; /* Limit the icon width to 50% of its container */
+    max-height: 50%; /* Limit the icon height to 50% of its container */
+    object-fit: contain; 
 }

@@ -39,6 +39,7 @@ const featureData = [
 const Features = () => {
   return (
     <div className="features-container">
+
       {featureData.map((feature, index) => (
         <div key={index} className={`feature-item feature-item-${index % 2 === 0 ? 'left' : 'right'}`}>
           <div className="icon">

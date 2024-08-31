@@ -38,6 +38,7 @@
     flex: 1; /* Make the content take up the remaining space */
 }
 
+
 /* Responsive adjustments for mobile view */
 @media (max-width: 600px) {
     .feature-item {

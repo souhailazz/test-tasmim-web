@@ -1,0 +1,29 @@
+.demo-row {
+    background-color: #333;
+    padding: 50px 0;
+  }
+  
+  
+  /*Implement*/
+  .sponsor-feature {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      min-height: 100px; /* Reduced min-height */
+      max-height: 150px; /* Added max-height to limit size */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 0;
+      white-space: nowrap; /* Prevents text from wrapping to a new line */
+  }
+  
+  #id-sponsors .carousel {
+      margin-bottom: 20px;
+  }
+  #id-sponsors .item {
+      padding-bottom: 20px;
+  }
+  #id-sponsors .carousel-indicators {
+      bottom: -25px;
+  }
